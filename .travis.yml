@@ -4,6 +4,12 @@ matrix:
   include:
     - os: linux
       dist: xenial
+    - os: linux
+      arch: arm64
+      env:
+        - MB_PYTHON_VERSION=3.9
+        - PLAT=aarch64
+        - DOCKER_IMAGE=quay.io/pypa/manylinux2014_aarch64
    #- os: osx
       # Specify version to avoid bug (https://github.com/travis-ci/travis-ci/issues/6522)
   #   osx_image: xcode9.3
