@@ -80,6 +80,8 @@ cd build
 cmake -G "Unix Makefiles" -DEMBEDDED=1 ..
 make
 ls -lrt ${TRAVIS_BUILD_DIR}/build/
+ls -lrt ${TRAVIS_BUILD_DIR}/build/src/
+ls -lrt ${TRAVIS_BUILD_DIR}/build/out/
 
 echo "Building OSQP with embedded=2"
 cd ${TRAVIS_BUILD_DIR}
